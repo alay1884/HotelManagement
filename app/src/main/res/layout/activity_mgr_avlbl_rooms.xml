@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".controller.managerController.MgrAvlblRoomsActivity">
+
+    <LinearLayout
+        android:id="@+id/llMgrAvlblRoomIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ivMgrAr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_room_available" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Search Available Rooms"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/horz_linear_layout_style">
+
+            <TextView
+                style="@style/text_style"
+                android:text="Hotel:" />
+
+            <TextView
+                android:id="@+id/tvMgrArHotelName"
+                style="@style/edit_text_style"
+                android:text="MAVERICK" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/horz_linear_layout_style">
+
+            <TextView
+                style="@style/text_style"
+                android:text="Start Date:" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/edit_text_style"
+                android:hint="YYYY-MM-DD">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etMgrArStartDate"
+                    style="@style/edit_text_style"
+                    android:text="2020-08-01" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/horz_linear_layout_style">
+
+            <TextView
+                style="@style/text_style"
+                android:text="End Date:" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/edit_text_style"
+                android:hint="YYYY-MM-DD">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etMgrArEndDate"
+                    style="@style/edit_text_style"
+                    android:text="2020-08-03" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/horz_linear_layout_style">
+
+            <TextView
+                style="@style/text_style"
+                android:layout_weight="1"
+                android:text="Start Time:" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_weight="5"
+                style="@style/edit_text_style"
+                android:hint="HH:MM (24 Hour format)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etMgrArStartTime"
+                    style="@style/edit_text_style"
+                    android:layout_weight="5"
+                    android:text="23:59" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--            <Spinner-->
+            <!--                android:id="@+id/spnrMgrArTime"-->
+            <!--                style="@style/spinner_style"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="0.1"-->
+            <!--                android:entries="@array/time" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Room Type:" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbMgrArStandard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Standard " />
+
+                <CheckBox
+                    android:id="@+id/cbMgrArDeluxe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Deluxe " />
+
+                <CheckBox
+                    android:id="@+id/cbMgrArSuite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Suite" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMgrArSearch"
+            style="@style/btn_style2"
+            android:layout_marginTop="35dp"
+            android:text="Search Available Rooms"
+            android:drawableRight="@drawable/ic_search" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMgrAvlblRoomOp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#eaeaea"
+        android:visibility="visible">
+
+        <LinearLayout
+            style="@style/horz_linear_layout_style"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="15dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_room_details" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="15dp"
+                android:text="Available Room List"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:drawableStart="@drawable/ic_sticky_notes"
+                android:drawableLeft="@drawable/ic_sticky_notes"
+                android:drawablePadding="5dp"
+                android:gravity="center|start"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Select the Room \n for more info"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp" />
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btnMgrSortArl"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="5dp"-->
+            <!--                android:background="@color/colorWhite"-->
+            <!--                android:drawableTop="@drawable/ic_filter"-->
+            <!--                android:drawablePadding="2dp"-->
+            <!--                android:padding="5dp"-->
+            <!--                android:text="sort"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:textColor="@color/colorPrimaryDark"-->
+            <!--                android:layout_marginLeft="5dp"-->
+            <!--                android:textSize="13sp" />-->
+
+            <Button
+                android:id="@+id/btnMgrDirArl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorWhite"
+                android:drawableTop="@drawable/ic_sort_ad"
+                android:drawablePadding="2dp"
+                android:padding="5dp"
+                android:text="sort"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lvMgrAvlblRoomList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

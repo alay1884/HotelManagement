@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical"
+    tools:context=".controller.systemAccessController.ViewProfileActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivAppIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="15dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_profile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="View Profile"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="User Name:" />
+
+                <TextView
+                    android:id="@+id/tvVpUserId"
+                    style="@style/edit_text_style"
+                    android:text=" samar_admin" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Password:" />
+
+
+                <TextView
+                    android:id="@+id/tvVpPassword"
+                    style="@style/edit_text_style"
+                    android:text=" admin123" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Role:" />
+
+
+                <TextView
+                    android:id="@+id/tvVpRole"
+                    style="@style/edit_text_style"
+                    android:text=" Admin" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Last Name:" />
+
+
+                <TextView
+                    android:id="@+id/tvVpLastName"
+                    style="@style/edit_text_style"
+                    android:text=" Hills" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="First Name:" />
+
+
+                <TextView
+                    android:id="@+id/tvVpFirstName"
+                    style="@style/edit_text_style"
+                    android:text="Samar" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:gravity="center"
+                    android:text="Phone:" />
+
+                <TextView
+                    android:id="@+id/tvVpPhone"
+                    style="@style/edit_text_style"
+                    android:text="8088290912" />
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="E-mail:" />
+
+
+                <TextView
+                    android:id="@+id/tvVpEmail"
+                    style="@style/edit_text_style"
+                    android:text="sagargearsup@gmail.com" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Street Address:" />
+
+
+                <TextView
+                    android:id="@+id/tvVpStreetAddress"
+                    style="@style/edit_text_style"
+                    android:text="Vintage Pad" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="City:" />
+
+
+                <TextView
+                    android:id="@+id/tvVpCity"
+                    style="@style/edit_text_style"
+                    android:text="Arlington" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="State:" />
+
+
+                <TextView
+                    android:id="@+id/tvVpState"
+                    style="@style/edit_text_style"
+                    android:text="Texas" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Zip Code:" />
+
+
+                <TextView
+                    android:id="@+id/tvVpZip"
+                    style="@style/edit_text_style"
+                    android:text="76010" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVpCCN"
+                style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Credit Card Number:" />
+
+
+                <TextView
+                    android:id="@+id/tvVpCreditCarddNum"
+                    style="@style/edit_text_style"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:text="1053608910536921" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVpCCEx"
+                style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Card Expiry Date:" />
+
+                <TextView
+                    android:id="@+id/tvVpCardExpiryDate"
+                    style="@style/edit_text_style"
+                    android:text="02/24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVpCCType"
+                style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Credit Card Type:" />
+
+                <TextView
+                    android:id="@+id/tvVpCardType"
+                    style="@style/edit_text_style"
+                    android:text="VISA" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnVpModify"
+        style="@style/btn_style2"
+        android:text="Update Profile"
+        android:drawableRight="@drawable/ic_edit"
+        android:visibility="visible" />
+
+</LinearLayout>

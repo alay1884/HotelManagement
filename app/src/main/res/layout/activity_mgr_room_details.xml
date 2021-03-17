@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:orientation="vertical"
+    tools:context=".controller.managerController.MgrRoomDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivAppIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="15dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_room_details" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Room Details"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Hotel Name:"
+                    android:textColor="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/tvMgrRmDHotel"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Maverick" />
+
+            </LinearLayout>
+
+            <!--            <LinearLayout style="@style/horz_linear_layout_style">-->
+
+            <!--                <TextView-->
+            <!--                    style="@style/text_style"-->
+            <!--                    android:text="Start Date:"-->
+            <!--                    android:textColor="@color/colorGrey" />-->
+
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tvMgrRmDStartDate"-->
+            <!--                    style="@style/edit_text_style"-->
+            <!--                    android:text="2020-08-05" />-->
+
+            <!--            </LinearLayout>-->
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Start Date:"
+                    android:textColor="@color/colorGrey" />
+
+
+                <TextView
+                    android:id="@+id/tvMgrRmDDateFrom"
+                    style="@style/edit_text_style"
+                    android:text="2020-08-05" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="End Date:"
+                    android:textColor="@color/colorGrey" />
+
+
+                <TextView
+                    android:id="@+id/tvMgrRmDDateTo"
+                    style="@style/edit_text_style"
+                    android:text="2020-08-06" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Start Time(24-Hour Format):"
+                    android:textColor="@color/colorGrey" />
+
+
+                <TextView
+                    android:id="@+id/tvMgrRmDStartTime"
+                    style="@style/edit_text_style"
+                    android:text="12:03" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Room Type:"
+                    android:textColor="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/tvMgrRmDRoomType"
+                    style="@style/edit_text_style"
+                    android:text="Standard" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Room Number:"
+                    android:textColor="@color/colorGrey" />
+
+
+                <TextView
+                    android:id="@+id/tvMgrRmDRoomNumRd"
+                    style="@style/edit_text_style"
+                    android:text="121" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Room price per night(Weekday):"
+                    android:textColor="@color/colorGrey" />
+
+
+                <TextView
+                    android:id="@+id/tvMgrRmDRoomPriceWeekday"
+                    style="@style/edit_text_style"
+                    android:text="$100" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Room price per night(Weekend):"
+                    android:textColor="@color/colorGrey" />
+
+
+                <TextView
+                    android:id="@+id/tvMgrRmDRoomPriceWeekend"
+                    style="@style/edit_text_style"
+                    android:text="$150" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Tax(percent):"
+                    android:textColor="@color/colorGrey" />
+
+
+                <TextView
+                    android:id="@+id/tvMgrRmDRoomTax"
+                    style="@style/edit_text_style"
+                    android:text="8.25%" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Floor Number:"
+                    android:textColor="@color/colorGrey" />
+
+
+                <TextView
+                    android:id="@+id/tvMgrRmDFloorNumRd"
+                    style="@style/text_style"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:text="1"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Occupied Status:"
+                    android:textColor="@color/colorGrey" />
+
+
+                <TextView
+                    android:id="@+id/tvMgrRmDOccupiedStatus"
+                    style="@style/edit_text_style"
+                    android:text="No" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horz_linear_layout_style">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="Availability Status:"
+                    android:textColor="@color/colorGrey" />
+
+
+                <TextView
+                    android:id="@+id/tvMgrRmDAvailabilityStatus"
+                    style="@style/edit_text_style"
+                    android:text="Yes" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnMgrRmDEdit"
+        style="@style/btn_style2"
+        android:text="Modify Room Details"
+        android:drawableRight="@drawable/ic_edit"
+        android:visibility="visible" />
+
+</LinearLayout>
