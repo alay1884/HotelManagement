@@ -1,0 +1,17 @@
+Project Name: Hotel Management System
+Contributor: Alay Parikh
+Editor Used: Android Studio
+
+Introduction: Hello viewer. Run this application in any android system.
+
+Features: It has 3 Roles in it (Admin, Manager, Guest) Each user has it own set of responsibilities
+          as well as access grants. FOr example: Admin can Add/Remove Manager. Manager can Add,
+          Remove or Edit information of any guest. Guest can Create and edit there account. This
+          are the most basic features described here. Dive into the application to know more.
+
+
+
+Thank You,
+Alay Parikh
+alayparikh@gmail.com
+Cell: 408-483-1223.
